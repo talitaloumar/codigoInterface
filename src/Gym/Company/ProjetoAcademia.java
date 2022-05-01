@@ -17,10 +17,28 @@ public class ProjetoAcademia {
     private JFormattedTextField c_nasc;
     private JFormattedTextField c_ultimoNome;
     private JFormattedTextField c_sobreNome;
-    private JFormattedTextField c_nome;
+    String private JFormattedTextField c_nome;
 
 
-    public ProjetoAcademia() {
+    public ProjetoAcademia(JFormattedTextField formattedTextField1, JButton enviar, JCheckBox alunoACheckBox, JCheckBox administraçãoCheckBox,
+                           JCheckBox professorACheckBox, JFormattedTextField c_id, JFormattedTextField c_endereco, JFormattedTextField c_tel,
+                           JFormattedTextField c_email, JFormattedTextField c_nasc, JFormattedTextField c_ultimoNome, JFormattedTextField c_sobreNome,
+                           JFormattedTextField c_nome)
+    {
+
+        this.formattedTextField1 = formattedTextField1;
+        ENVIAR = enviar;
+        this.alunoACheckBox = alunoACheckBox;
+        this.administraçãoCheckBox = administraçãoCheckBox;
+        this.professorACheckBox = professorACheckBox;
+        this.c_id = c_id;
+        this.c_endereco = c_endereco;
+        this.c_tel = c_tel;
+        this.c_email = c_email;
+        this.c_nasc = c_nasc;
+        this.c_ultimoNome = c_ultimoNome;
+        this.c_sobreNome = c_sobreNome;
+        this.c_nome = c_nome;
         panel1.addComponentListener(new ComponentAdapter() {
         });
     }
