@@ -1,7 +1,12 @@
 package Gym.Company;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
+
+
+ Scanner s = new Scanner(System.in);
 
 public class ProjetoAcademia {
     private JPanel panel1;
@@ -9,7 +14,7 @@ public class ProjetoAcademia {
     private JButton ENVIAR;
     private JCheckBox alunoACheckBox;
     private JCheckBox administraçãoCheckBox;
-    private JCheckBox professorACheckBox;
+    public JCheckBox professorACheckBox;
     private JFormattedTextField c_id;
     private JFormattedTextField c_endereco;
     private JFormattedTextField c_tel;
@@ -18,6 +23,11 @@ public class ProjetoAcademia {
     private JFormattedTextField c_ultimoNome;
     private JFormattedTextField c_sobreNome;
     String private JFormattedTextField c_nome;
+    private JRadioButton C_professor;
+    private JRadioButton c_aluno;
+    private JRadioButton c_admin;
+
+    import java.util.Scanner;
 
 
     public ProjetoAcademia(JFormattedTextField formattedTextField1, JButton enviar, JCheckBox alunoACheckBox, JCheckBox administraçãoCheckBox,
@@ -40,6 +50,54 @@ public class ProjetoAcademia {
         this.c_sobreNome = c_sobreNome;
         this.c_nome = c_nome;
         panel1.addComponentListener(new ComponentAdapter() {
+        });
+        ENVIAR.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             *
+             * @param e the event to be processed
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+
+            }
+
+        });
+        professorACheckBox.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             *
+             * @param e the event to be processed
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String professorACheckBox = s.nextLine();
+
+
+            }
+        });
+        administraçãoCheckBox.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             *
+             * @param e the event to be processed
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        alunoACheckBox.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             *
+             * @param e the event to be processed
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
         });
     }
 
